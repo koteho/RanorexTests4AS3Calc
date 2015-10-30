@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="5.4.3.26106"
+id="46923a0a-2451-4e03-8978-60ceb0cfd41b"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		Recording1
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="AC3CalcTests"/>
+	<variables/>
+	<recorditems/>
+	<repository
+	name="AC3CalcTestsRepository"
+	id="dc6c4dbd-dcd5-4b5d-8604-222411f4b3ff"
+	rxversion="5.4.3.26106"
+	relativepath="AC3CalcTestsRepository.rxrep">
+		<codegen
+		classname="AC3CalcTestsRepository"
+		namespace="AC3CalcTests"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="34b587c8-291c-4a79-82f0-6cd70f0b19b6"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

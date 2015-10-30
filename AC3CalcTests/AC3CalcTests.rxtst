@@ -1,0 +1,30 @@
+﻿<testsuite
+name="AC3CalcTests"
+rxversion="5.4.3.26106"
+id="a1307f36-8742-4d5d-9c61-c6cd7cf85409"
+reportfilename="%S_%Y%M%D_%T.rxlog"
+reporttemplatefolder=""
+reportxslfilename=""
+placescreenshotsinfolder="True"
+ReportTime="RelativeToTestSuiteStartTime"
+reportwriteinterval="30000ms"
+reportcompress="False"
+enabletracingscreenshots="True"
+TracingScreenshotMode="Foreground"
+TracingScreenshotQuality="40"
+reportlevel="Info;20">
+	<content>
+		<testcase
+		name="TestCase"
+		id="59bde01d-0441-46fc-9ef7-0ead3942c0e6"/>
+	</content>
+	<testconfigurations
+	default="TestRun">
+		<testconfiguration
+		name="TestRun">
+			<testcase
+			id="59bde01d-0441-46fc-9ef7-0ead3942c0e6"/>
+		</testconfiguration>
+	</testconfigurations>
+	<references/>
+</testsuite>

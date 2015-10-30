@@ -1,0 +1,9 @@
+D:\RanorexStudio Projects\AC3CalcTests\AC3CalcTests\bin\Debug\AC3CalcTests.rxtmg
+D:\RanorexStudio Projects\AC3CalcTests\AC3CalcTests\bin\Debug\AC3CalcTests.rxtst
+D:\RanorexStudio Projects\AC3CalcTests\AC3CalcTests\bin\Debug\AC3CalcTests.exe.config
+D:\RanorexStudio Projects\AC3CalcTests\AC3CalcTests\bin\Debug\AC3CalcTests.exe
+D:\RanorexStudio Projects\AC3CalcTests\AC3CalcTests\bin\Debug\AC3CalcTests.pdb
+D:\RanorexStudio Projects\AC3CalcTests\AC3CalcTests\obj\x86\Debug\AC3CalcTests.csprojResolveAssemblyReference.cache
+D:\RanorexStudio Projects\AC3CalcTests\AC3CalcTests\obj\x86\Debug\AC3CalcTests.exe
+D:\RanorexStudio Projects\AC3CalcTests\AC3CalcTests\obj\x86\Debug\AC3CalcTests.pdb
+D:\RanorexStudio Projects\AC3CalcTests\AC3CalcTests\bin\Debug\RepositoryImages\AC3CalcTestsRepository34b587c8.rximgres
