@@ -28,9 +28,6 @@ namespace AC3CalcTests
     {
         static AC3CalcTestsRepository instance = new AC3CalcTestsRepository();
         AC3CalcTestsRepositoryFolders.AdobeFlashPlayer19AppFolder _adobeflashplayer19;
-        AC3CalcTestsRepositoryFolders.ExplorerAppFolder _explorer;
-        AC3CalcTestsRepositoryFolders.Explorer1AppFolder _explorer1;
-        AC3CalcTestsRepositoryFolders.Flashplayer19SaDebugExePropertiesAppFolder _flashplayer19sadebugexeproperties;
 
         /// <summary>
         /// Gets the singleton class instance representing the AC3CalcTestsRepository element repository.
@@ -48,9 +45,6 @@ namespace AC3CalcTests
             : base("AC3CalcTestsRepository", "/", null, 0, false, "34b587c8-291c-4a79-82f0-6cd70f0b19b6", ".\\RepositoryImages\\AC3CalcTestsRepository34b587c8.rximgres")
         {
             _adobeflashplayer19 = new AC3CalcTestsRepositoryFolders.AdobeFlashPlayer19AppFolder(this);
-            _explorer = new AC3CalcTestsRepositoryFolders.ExplorerAppFolder(this);
-            _explorer1 = new AC3CalcTestsRepositoryFolders.Explorer1AppFolder(this);
-            _flashplayer19sadebugexeproperties = new AC3CalcTestsRepositoryFolders.Flashplayer19SaDebugExePropertiesAppFolder(this);
         }
 
 #region Variables
@@ -88,33 +82,6 @@ namespace AC3CalcTests
         public virtual AC3CalcTestsRepositoryFolders.AdobeFlashPlayer19AppFolder AdobeFlashPlayer19
         {
             get { return _adobeflashplayer19; }
-        }
-
-        /// <summary>
-        /// The Explorer folder.
-        /// </summary>
-        [RepositoryFolder("18096a17-2495-4b44-893d-fdd56d87a9c8")]
-        public virtual AC3CalcTestsRepositoryFolders.ExplorerAppFolder Explorer
-        {
-            get { return _explorer; }
-        }
-
-        /// <summary>
-        /// The Explorer1 folder.
-        /// </summary>
-        [RepositoryFolder("2a98cd82-b3d4-413a-87a7-cd1396728cec")]
-        public virtual AC3CalcTestsRepositoryFolders.Explorer1AppFolder Explorer1
-        {
-            get { return _explorer1; }
-        }
-
-        /// <summary>
-        /// The Flashplayer19SaDebugExeProperties folder.
-        /// </summary>
-        [RepositoryFolder("ca373eac-54d2-4e75-a335-9d5ae2a09853")]
-        public virtual AC3CalcTestsRepositoryFolders.Flashplayer19SaDebugExePropertiesAppFolder Flashplayer19SaDebugExeProperties
-        {
-            get { return _flashplayer19sadebugexeproperties; }
         }
     }
 
@@ -354,204 +321,6 @@ namespace AC3CalcTests
             /// The Close item info.
             /// </summary>
             [RepositoryItemInfo("8188070c-1e95-421e-9854-32db59b754c2")]
-            public virtual RepoItemInfo CloseInfo
-            {
-                get
-                {
-                    return _closeInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The ExplorerAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("18096a17-2495-4b44-893d-fdd56d87a9c8")]
-        public partial class ExplorerAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _windowsexplorerInfo;
-
-            /// <summary>
-            /// Creates a new Explorer  folder.
-            /// </summary>
-            public ExplorerAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Explorer", "/menubar[@processname='explorer']", parentFolder, 30000, null, true, "18096a17-2495-4b44-893d-fdd56d87a9c8", "")
-            {
-                _windowsexplorerInfo = new RepoItemInfo(this, "WindowsExplorer", "?/?/container[@caption='Running applications']/?/?/toolbar[@accessiblename='Running applications']/button[@accessiblename='Windows Explorer']", 30000, null, "ffcc470c-c8ac-4b38-88d6-feb49ef0a097");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("18096a17-2495-4b44-893d-fdd56d87a9c8")]
-            public virtual Ranorex.MenuBar Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.MenuBar>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("18096a17-2495-4b44-893d-fdd56d87a9c8")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The WindowsExplorer item.
-            /// </summary>
-            [RepositoryItem("ffcc470c-c8ac-4b38-88d6-feb49ef0a097")]
-            public virtual Ranorex.Button WindowsExplorer
-            {
-                get
-                {
-                    return _windowsexplorerInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The WindowsExplorer item info.
-            /// </summary>
-            [RepositoryItemInfo("ffcc470c-c8ac-4b38-88d6-feb49ef0a097")]
-            public virtual RepoItemInfo WindowsExplorerInfo
-            {
-                get
-                {
-                    return _windowsexplorerInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The Explorer1AppFolder folder.
-        /// </summary>
-        [RepositoryFolder("2a98cd82-b3d4-413a-87a7-cd1396728cec")]
-        public partial class Explorer1AppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _flashplayer19sadebugexepropertiesInfo;
-
-            /// <summary>
-            /// Creates a new Explorer1  folder.
-            /// </summary>
-            public Explorer1AppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Explorer1", "/form[@processname='explorer' and @class='TaskListThumbnailWnd']", parentFolder, 30000, null, true, "2a98cd82-b3d4-413a-87a7-cd1396728cec", "")
-            {
-                _flashplayer19sadebugexepropertiesInfo = new RepoItemInfo(this, "Flashplayer19SaDebugExeProperties", "?/?/listitem[@accessiblename~'^flashplayer_19_sa_debug\\.e']", 30000, null, "df336508-6f75-45c5-ad4c-395f809180fd");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("2a98cd82-b3d4-413a-87a7-cd1396728cec")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("2a98cd82-b3d4-413a-87a7-cd1396728cec")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Flashplayer19SaDebugExeProperties item.
-            /// </summary>
-            [RepositoryItem("df336508-6f75-45c5-ad4c-395f809180fd")]
-            public virtual Ranorex.ListItem Flashplayer19SaDebugExeProperties
-            {
-                get
-                {
-                    return _flashplayer19sadebugexepropertiesInfo.CreateAdapter<Ranorex.ListItem>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Flashplayer19SaDebugExeProperties item info.
-            /// </summary>
-            [RepositoryItemInfo("df336508-6f75-45c5-ad4c-395f809180fd")]
-            public virtual RepoItemInfo Flashplayer19SaDebugExePropertiesInfo
-            {
-                get
-                {
-                    return _flashplayer19sadebugexepropertiesInfo;
-                }
-            }
-        }
-
-        /// <summary>
-        /// The Flashplayer19SaDebugExePropertiesAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("ca373eac-54d2-4e75-a335-9d5ae2a09853")]
-        public partial class Flashplayer19SaDebugExePropertiesAppFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _closeInfo;
-
-            /// <summary>
-            /// Creates a new Flashplayer19SaDebugExeProperties  folder.
-            /// </summary>
-            public Flashplayer19SaDebugExePropertiesAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Flashplayer19SaDebugExeProperties", "/form[@title~'^flashplayer_19_sa_debug\\.e']", parentFolder, 30000, null, true, "ca373eac-54d2-4e75-a335-9d5ae2a09853", "")
-            {
-                _closeInfo = new RepoItemInfo(this, "Close", "?/?/button[@accessiblename='Close']", 30000, null, "714503d9-e62d-4f2b-bf27-f4809d6b717e");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("ca373eac-54d2-4e75-a335-9d5ae2a09853")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("ca373eac-54d2-4e75-a335-9d5ae2a09853")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Close item.
-            /// </summary>
-            [RepositoryItem("714503d9-e62d-4f2b-bf27-f4809d6b717e")]
-            public virtual Ranorex.Button Close
-            {
-                get
-                {
-                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Close item info.
-            /// </summary>
-            [RepositoryItemInfo("714503d9-e62d-4f2b-bf27-f4809d6b717e")]
             public virtual RepoItemInfo CloseInfo
             {
                 get
