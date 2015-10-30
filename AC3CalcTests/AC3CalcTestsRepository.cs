@@ -27,7 +27,10 @@ namespace AC3CalcTests
     public partial class AC3CalcTestsRepository : RepoGenBaseFolder
     {
         static AC3CalcTestsRepository instance = new AC3CalcTestsRepository();
-        AC3CalcTestsRepositoryFolders.Flex3CalcSwfGoogleChromeAppFolder _flex3calcswfgooglechrome;
+        AC3CalcTestsRepositoryFolders.AdobeFlashPlayer19AppFolder _adobeflashplayer19;
+        AC3CalcTestsRepositoryFolders.ExplorerAppFolder _explorer;
+        AC3CalcTestsRepositoryFolders.Explorer1AppFolder _explorer1;
+        AC3CalcTestsRepositoryFolders.Flashplayer19SaDebugExePropertiesAppFolder _flashplayer19sadebugexeproperties;
 
         /// <summary>
         /// Gets the singleton class instance representing the AC3CalcTestsRepository element repository.
@@ -44,7 +47,10 @@ namespace AC3CalcTests
         public AC3CalcTestsRepository() 
             : base("AC3CalcTestsRepository", "/", null, 0, false, "34b587c8-291c-4a79-82f0-6cd70f0b19b6", ".\\RepositoryImages\\AC3CalcTestsRepository34b587c8.rximgres")
         {
-            _flex3calcswfgooglechrome = new AC3CalcTestsRepositoryFolders.Flex3CalcSwfGoogleChromeAppFolder(this);
+            _adobeflashplayer19 = new AC3CalcTestsRepositoryFolders.AdobeFlashPlayer19AppFolder(this);
+            _explorer = new AC3CalcTestsRepositoryFolders.ExplorerAppFolder(this);
+            _explorer1 = new AC3CalcTestsRepositoryFolders.Explorer1AppFolder(this);
+            _flashplayer19sadebugexeproperties = new AC3CalcTestsRepositoryFolders.Flashplayer19SaDebugExePropertiesAppFolder(this);
         }
 
 #region Variables
@@ -76,12 +82,39 @@ namespace AC3CalcTests
         }
 
         /// <summary>
-        /// The Flex3CalcSwfGoogleChrome folder.
+        /// The AdobeFlashPlayer19 folder.
         /// </summary>
-        [RepositoryFolder("c0e0f54f-7ba3-4533-9a1f-24888f1ae6d5")]
-        public virtual AC3CalcTestsRepositoryFolders.Flex3CalcSwfGoogleChromeAppFolder Flex3CalcSwfGoogleChrome
+        [RepositoryFolder("9a67f28f-bb63-4c68-88d3-82093eea2718")]
+        public virtual AC3CalcTestsRepositoryFolders.AdobeFlashPlayer19AppFolder AdobeFlashPlayer19
         {
-            get { return _flex3calcswfgooglechrome; }
+            get { return _adobeflashplayer19; }
+        }
+
+        /// <summary>
+        /// The Explorer folder.
+        /// </summary>
+        [RepositoryFolder("18096a17-2495-4b44-893d-fdd56d87a9c8")]
+        public virtual AC3CalcTestsRepositoryFolders.ExplorerAppFolder Explorer
+        {
+            get { return _explorer; }
+        }
+
+        /// <summary>
+        /// The Explorer1 folder.
+        /// </summary>
+        [RepositoryFolder("2a98cd82-b3d4-413a-87a7-cd1396728cec")]
+        public virtual AC3CalcTestsRepositoryFolders.Explorer1AppFolder Explorer1
+        {
+            get { return _explorer1; }
+        }
+
+        /// <summary>
+        /// The Flashplayer19SaDebugExeProperties folder.
+        /// </summary>
+        [RepositoryFolder("ca373eac-54d2-4e75-a335-9d5ae2a09853")]
+        public virtual AC3CalcTestsRepositoryFolders.Flashplayer19SaDebugExePropertiesAppFolder Flashplayer19SaDebugExeProperties
+        {
+            get { return _flashplayer19sadebugexeproperties; }
         }
     }
 
@@ -92,43 +125,49 @@ namespace AC3CalcTests
     public partial class AC3CalcTestsRepositoryFolders
     {
         /// <summary>
-        /// The Flex3CalcSwfGoogleChromeAppFolder folder.
+        /// The AdobeFlashPlayer19AppFolder folder.
         /// </summary>
-        [RepositoryFolder("c0e0f54f-7ba3-4533-9a1f-24888f1ae6d5")]
-        public partial class Flex3CalcSwfGoogleChromeAppFolder : RepoGenBaseFolder
+        [RepositoryFolder("9a67f28f-bb63-4c68-88d3-82093eea2718")]
+        public partial class AdobeFlashPlayer19AppFolder : RepoGenBaseFolder
         {
-            Element633897488InfoClass _element633897488Info;
+            SelfInfoClass _selfInfo;
+            RepoItemInfo _adobeflashplayer19Info;
+            RepoItemInfo _maximizeInfo;
+            RepoItemInfo _closeInfo;
 
             /// <summary>
-            /// Creates a new Flex3CalcSwfGoogleChrome  folder.
+            /// Creates a new AdobeFlashPlayer19  folder.
             /// </summary>
-            public Flex3CalcSwfGoogleChromeAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Flex3CalcSwfGoogleChrome", "/form[@title~'^Flex3Calc\\.swf\\ -\\ Google\\ Ch']", parentFolder, 30000, null, true, "c0e0f54f-7ba3-4533-9a1f-24888f1ae6d5", "")
+            public AdobeFlashPlayer19AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("AdobeFlashPlayer19", "/form[@title='Adobe Flash Player 19']", parentFolder, 30000, null, true, "9a67f28f-bb63-4c68-88d3-82093eea2718", "")
             {
-                _element633897488Info = new Element633897488InfoClass(this);
+                _selfInfo = new SelfInfoClass(this);
+                _adobeflashplayer19Info = new RepoItemInfo(this, "AdobeFlashPlayer19", "titlebar[@accessiblerole='TitleBar']", 30000, null, "c3bdb003-7a80-414b-bd58-8a96d04fe92a");
+                _maximizeInfo = new RepoItemInfo(this, "Maximize", "?/?/button[@accessiblename='Maximize']", 30000, null, "4a32ea10-5ac4-4fc7-ba37-dc80ecd41c23");
+                _closeInfo = new RepoItemInfo(this, "Close", "?/?/button[@accessiblename='Close']", 30000, null, "8188070c-1e95-421e-9854-32db59b754c2");
             }
 
             /// <summary>
-            /// The Element633897488InfoClass folder.
+            /// The SelfInfoClass folder.
             /// </summary>
-            [RepositoryItemInfo("35f883cb-9273-4181-817b-98a761729cb5")]
-            public class Element633897488InfoClass : RepoItemInfo
+            [RepositoryItemInfo("9a67f28f-bb63-4c68-88d3-82093eea2718")]
+            public class SelfInfoClass : RepoItemInfo
             {
                 /// <summary>
-                /// Element633897488InfoClass class constructor.
+                /// SelfInfoClass class constructor.
                 /// </summary>
-                public Element633897488InfoClass(RepoGenBaseFolder parentFolder)
-                    : base(parentFolder, "Element633897488", "?", 30000, null, "35f883cb-9273-4181-817b-98a761729cb5")
+                public SelfInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "Self", "", 0, null, "9a67f28f-bb63-4c68-88d3-82093eea2718")
                 { }
 
                 /// <summary>
                 /// Gets the Screenshot1 item image.
                 /// </summary>
                 /// <returns>The Screenshot1 image.</returns>
-                [RepositoryImage("e6128a84-a567-4fd5-af23-17eae2666f94")]
+                [RepositoryImage("e8c60739-1cd5-41f2-9815-8405c8fe0cef")]
                 public CompressedImage GetScreenshot1()
                 {
-                    return GetImage("e6128a84-a567-4fd5-af23-17eae2666f94");
+                    return GetImage("e8c60739-1cd5-41f2-9815-8405c8fe0cef");
                 }
 
                 /// <summary>
@@ -136,17 +175,101 @@ namespace AC3CalcTests
                 /// </summary>
                 /// <param name="cropRect">The bounds of the sub-image to return.</param>
                 /// <returns>The cropped image.</returns>
-                [RepositoryImage("e6128a84-a567-4fd5-af23-17eae2666f94")]
+                [RepositoryImage("e8c60739-1cd5-41f2-9815-8405c8fe0cef")]
                 public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
                 {
-                    return GetImage("e6128a84-a567-4fd5-af23-17eae2666f94", cropRect);
+                    return GetImage("e8c60739-1cd5-41f2-9815-8405c8fe0cef", cropRect);
+                }
+
+                /// <summary>
+                /// Gets the Screenshot2 item image.
+                /// </summary>
+                /// <returns>The Screenshot2 image.</returns>
+                [RepositoryImage("fe3cb269-e4aa-4f6a-a6da-78bbde4055fa")]
+                public CompressedImage GetScreenshot2()
+                {
+                    return GetImage("fe3cb269-e4aa-4f6a-a6da-78bbde4055fa");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot2 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("fe3cb269-e4aa-4f6a-a6da-78bbde4055fa")]
+                public CompressedImage GetScreenshot2(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("fe3cb269-e4aa-4f6a-a6da-78bbde4055fa", cropRect);
+                }
+
+                /// <summary>
+                /// Gets the Screenshot3 item image.
+                /// </summary>
+                /// <returns>The Screenshot3 image.</returns>
+                [RepositoryImage("5cd4d2a3-1cbb-4c89-a960-85e22d9ca55a")]
+                public CompressedImage GetScreenshot3()
+                {
+                    return GetImage("5cd4d2a3-1cbb-4c89-a960-85e22d9ca55a");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot3 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("5cd4d2a3-1cbb-4c89-a960-85e22d9ca55a")]
+                public CompressedImage GetScreenshot3(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("5cd4d2a3-1cbb-4c89-a960-85e22d9ca55a", cropRect);
+                }
+
+                /// <summary>
+                /// Gets the Screenshot4 item image.
+                /// </summary>
+                /// <returns>The Screenshot4 image.</returns>
+                [RepositoryImage("18a69525-7b50-4aa0-aa00-f64bbc8a6b9c")]
+                public CompressedImage GetScreenshot4()
+                {
+                    return GetImage("18a69525-7b50-4aa0-aa00-f64bbc8a6b9c");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot4 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("18a69525-7b50-4aa0-aa00-f64bbc8a6b9c")]
+                public CompressedImage GetScreenshot4(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("18a69525-7b50-4aa0-aa00-f64bbc8a6b9c", cropRect);
+                }
+
+                /// <summary>
+                /// Gets the Screenshot5 item image.
+                /// </summary>
+                /// <returns>The Screenshot5 image.</returns>
+                [RepositoryImage("ba9161c4-989e-4ed0-9efa-8101399dd836")]
+                public CompressedImage GetScreenshot5()
+                {
+                    return GetImage("ba9161c4-989e-4ed0-9efa-8101399dd836");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot5 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("ba9161c4-989e-4ed0-9efa-8101399dd836")]
+                public CompressedImage GetScreenshot5(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("ba9161c4-989e-4ed0-9efa-8101399dd836", cropRect);
                 }
             }
 
             /// <summary>
             /// The Self item.
             /// </summary>
-            [RepositoryItem("c0e0f54f-7ba3-4533-9a1f-24888f1ae6d5")]
+            [RepositoryItem("9a67f28f-bb63-4c68-88d3-82093eea2718")]
             public virtual Ranorex.Form Self
             {
                 get
@@ -158,7 +281,121 @@ namespace AC3CalcTests
             /// <summary>
             /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("c0e0f54f-7ba3-4533-9a1f-24888f1ae6d5")]
+            [RepositoryItemInfo("9a67f28f-bb63-4c68-88d3-82093eea2718")]
+            public virtual SelfInfoClass SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AdobeFlashPlayer19 item.
+            /// </summary>
+            [RepositoryItem("c3bdb003-7a80-414b-bd58-8a96d04fe92a")]
+            public virtual Ranorex.TitleBar AdobeFlashPlayer19
+            {
+                get
+                {
+                    return _adobeflashplayer19Info.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AdobeFlashPlayer19 item info.
+            /// </summary>
+            [RepositoryItemInfo("c3bdb003-7a80-414b-bd58-8a96d04fe92a")]
+            public virtual RepoItemInfo AdobeFlashPlayer19Info
+            {
+                get
+                {
+                    return _adobeflashplayer19Info;
+                }
+            }
+
+            /// <summary>
+            /// The Maximize item.
+            /// </summary>
+            [RepositoryItem("4a32ea10-5ac4-4fc7-ba37-dc80ecd41c23")]
+            public virtual Ranorex.Button Maximize
+            {
+                get
+                {
+                    return _maximizeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Maximize item info.
+            /// </summary>
+            [RepositoryItemInfo("4a32ea10-5ac4-4fc7-ba37-dc80ecd41c23")]
+            public virtual RepoItemInfo MaximizeInfo
+            {
+                get
+                {
+                    return _maximizeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("8188070c-1e95-421e-9854-32db59b754c2")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("8188070c-1e95-421e-9854-32db59b754c2")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ExplorerAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("18096a17-2495-4b44-893d-fdd56d87a9c8")]
+        public partial class ExplorerAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _windowsexplorerInfo;
+
+            /// <summary>
+            /// Creates a new Explorer  folder.
+            /// </summary>
+            public ExplorerAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Explorer", "/menubar[@processname='explorer']", parentFolder, 30000, null, true, "18096a17-2495-4b44-893d-fdd56d87a9c8", "")
+            {
+                _windowsexplorerInfo = new RepoItemInfo(this, "WindowsExplorer", "?/?/container[@caption='Running applications']/?/?/toolbar[@accessiblename='Running applications']/button[@accessiblename='Windows Explorer']", 30000, null, "ffcc470c-c8ac-4b38-88d6-feb49ef0a097");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("18096a17-2495-4b44-893d-fdd56d87a9c8")]
+            public virtual Ranorex.MenuBar Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.MenuBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("18096a17-2495-4b44-893d-fdd56d87a9c8")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
@@ -168,26 +405,158 @@ namespace AC3CalcTests
             }
 
             /// <summary>
-            /// The Element633897488 item.
+            /// The WindowsExplorer item.
             /// </summary>
-            [RepositoryItem("35f883cb-9273-4181-817b-98a761729cb5")]
-            public virtual Ranorex.Unknown Element633897488
+            [RepositoryItem("ffcc470c-c8ac-4b38-88d6-feb49ef0a097")]
+            public virtual Ranorex.Button WindowsExplorer
             {
                 get
                 {
-                    return _element633897488Info.CreateAdapter<Ranorex.Unknown>(true);
+                    return _windowsexplorerInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The Element633897488 item info.
+            /// The WindowsExplorer item info.
             /// </summary>
-            [RepositoryItemInfo("35f883cb-9273-4181-817b-98a761729cb5")]
-            public virtual Element633897488InfoClass Element633897488Info
+            [RepositoryItemInfo("ffcc470c-c8ac-4b38-88d6-feb49ef0a097")]
+            public virtual RepoItemInfo WindowsExplorerInfo
             {
                 get
                 {
-                    return _element633897488Info;
+                    return _windowsexplorerInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Explorer1AppFolder folder.
+        /// </summary>
+        [RepositoryFolder("2a98cd82-b3d4-413a-87a7-cd1396728cec")]
+        public partial class Explorer1AppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _flashplayer19sadebugexepropertiesInfo;
+
+            /// <summary>
+            /// Creates a new Explorer1  folder.
+            /// </summary>
+            public Explorer1AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Explorer1", "/form[@processname='explorer' and @class='TaskListThumbnailWnd']", parentFolder, 30000, null, true, "2a98cd82-b3d4-413a-87a7-cd1396728cec", "")
+            {
+                _flashplayer19sadebugexepropertiesInfo = new RepoItemInfo(this, "Flashplayer19SaDebugExeProperties", "?/?/listitem[@accessiblename~'^flashplayer_19_sa_debug\\.e']", 30000, null, "df336508-6f75-45c5-ad4c-395f809180fd");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("2a98cd82-b3d4-413a-87a7-cd1396728cec")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("2a98cd82-b3d4-413a-87a7-cd1396728cec")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Flashplayer19SaDebugExeProperties item.
+            /// </summary>
+            [RepositoryItem("df336508-6f75-45c5-ad4c-395f809180fd")]
+            public virtual Ranorex.ListItem Flashplayer19SaDebugExeProperties
+            {
+                get
+                {
+                    return _flashplayer19sadebugexepropertiesInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Flashplayer19SaDebugExeProperties item info.
+            /// </summary>
+            [RepositoryItemInfo("df336508-6f75-45c5-ad4c-395f809180fd")]
+            public virtual RepoItemInfo Flashplayer19SaDebugExePropertiesInfo
+            {
+                get
+                {
+                    return _flashplayer19sadebugexepropertiesInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Flashplayer19SaDebugExePropertiesAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("ca373eac-54d2-4e75-a335-9d5ae2a09853")]
+        public partial class Flashplayer19SaDebugExePropertiesAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _closeInfo;
+
+            /// <summary>
+            /// Creates a new Flashplayer19SaDebugExeProperties  folder.
+            /// </summary>
+            public Flashplayer19SaDebugExePropertiesAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Flashplayer19SaDebugExeProperties", "/form[@title~'^flashplayer_19_sa_debug\\.e']", parentFolder, 30000, null, true, "ca373eac-54d2-4e75-a335-9d5ae2a09853", "")
+            {
+                _closeInfo = new RepoItemInfo(this, "Close", "?/?/button[@accessiblename='Close']", 30000, null, "714503d9-e62d-4f2b-bf27-f4809d6b717e");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("ca373eac-54d2-4e75-a335-9d5ae2a09853")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("ca373eac-54d2-4e75-a335-9d5ae2a09853")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("714503d9-e62d-4f2b-bf27-f4809d6b717e")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("714503d9-e62d-4f2b-bf27-f4809d6b717e")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
                 }
             }
         }

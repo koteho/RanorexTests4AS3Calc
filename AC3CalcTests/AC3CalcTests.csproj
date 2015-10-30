@@ -8,7 +8,7 @@
     <AssemblyName>AC3CalcTests</AssemblyName>
     <RanorexVersion>5</RanorexVersion>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <projectdefaultrepository>a9459fee-f589-4652-be2b-a38201fd934f</projectdefaultrepository>
+    <projectdefaultrepository>09fd773e-c782-42dd-8021-4393e58c293d</projectdefaultrepository>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -55,64 +55,64 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AC3CalcTestsRepository.cs">
-      <BoundTo>a9459fee-f589-4652-be2b-a38201fd934f</BoundTo>
       <DependentUpon>AC3CalcTestsRepository.rxrep</DependentUpon>
+      <id>939d681b-227b-48c8-970a-a41b9df446d6</id>
+      <BoundTo>09fd773e-c782-42dd-8021-4393e58c293d</BoundTo>
       <RepositoryCode>true</RepositoryCode>
-      <id>c3857cab-05a3-40df-82f9-d84f20980ff8</id>
     </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>896a6658-56a2-46f3-a8e8-89d34e819ee8</id>
     </Compile>
+    <Compile Include="DesktopTests\Recording1.cs">
+      <id>76e7f898-021b-44bc-b95a-a2d56e23fa36</id>
+      <RecorderCode>true</RecorderCode>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <BoundTo>8e347896-01fa-42bb-bfa3-9095dc7e4b11</BoundTo>
+    </Compile>
+    <Compile Include="DesktopTests\Recording1.UserCode.cs">
+      <id>2e0113d9-4a9f-4925-9fdc-18fc3ca9e7ed</id>
+      <UserCode>true</UserCode>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <BoundTo>8e347896-01fa-42bb-bfa3-9095dc7e4b11</BoundTo>
+    </Compile>
+    <Compile Include="DesktopTests\Recording2.cs">
+      <id>d13cfebf-6de5-4486-bc5d-ef2211be5a12</id>
+      <RecorderCode>true</RecorderCode>
+      <DependentUpon>Recording2.rxrec</DependentUpon>
+      <BoundTo>7bbfefd9-f22c-4ad6-a124-45b17891dfe5</BoundTo>
+    </Compile>
+    <Compile Include="DesktopTests\Recording2.UserCode.cs">
+      <id>c3125766-ff71-4537-bcbc-1fa7ef65790b</id>
+      <UserCode>true</UserCode>
+      <DependentUpon>Recording2.rxrec</DependentUpon>
+      <BoundTo>7bbfefd9-f22c-4ad6-a124-45b17891dfe5</BoundTo>
+    </Compile>
     <Compile Include="Program.cs">
       <id>b2a01c48-b348-4b2b-8df6-fb1cbfff6477</id>
     </Compile>
-    <Compile Include="Recording1.cs">
-      <BoundTo>8e347896-01fa-42bb-bfa3-9095dc7e4b11</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>76e7f898-021b-44bc-b95a-a2d56e23fa36</id>
-    </Compile>
-    <Compile Include="Recording1.UserCode.cs">
-      <BoundTo>8e347896-01fa-42bb-bfa3-9095dc7e4b11</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>2e0113d9-4a9f-4925-9fdc-18fc3ca9e7ed</id>
-    </Compile>
-    <Compile Include="Recording2.cs">
-      <BoundTo>7bbfefd9-f22c-4ad6-a124-45b17891dfe5</BoundTo>
-      <DependentUpon>Recording2.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>d13cfebf-6de5-4486-bc5d-ef2211be5a12</id>
-    </Compile>
-    <Compile Include="Recording2.UserCode.cs">
-      <BoundTo>7bbfefd9-f22c-4ad6-a124-45b17891dfe5</BoundTo>
-      <DependentUpon>Recording2.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>c3125766-ff71-4537-bcbc-1fa7ef65790b</id>
-    </Compile>
     <None Include="AC3CalcTestsRepository.rximg">
-      <BoundTo>a9459fee-f589-4652-be2b-a38201fd934f</BoundTo>
       <DependentUpon>AC3CalcTestsRepository.rxrep</DependentUpon>
+      <id>b7b76854-ffbe-4ea5-9c89-6ef3eb6f10bb</id>
       <imageblob>true</imageblob>
-      <id>8b7e1267-d0bc-4ebf-8ebd-a43e9eadf3cd</id>
+      <BoundTo>f176863b-509d-424d-9dfb-b7e717699e5f</BoundTo>
     </None>
     <None Include="AC3CalcTestsRepository.rxrep">
-      <id>a9459fee-f589-4652-be2b-a38201fd934f</id>
+      <id>09fd773e-c782-42dd-8021-4393e58c293d</id>
       <repoid>dc6c4dbd-dcd5-4b5d-8604-222411f4b3ff</repoid>
       <reporootid>34b587c8-291c-4a79-82f0-6cd70f0b19b6</reporootid>
     </None>
     <None Include="app.config">
       <id>dddd6699-b6f9-4b27-9474-d98fa39632a1</id>
     </None>
-    <None Include="Recording1.rxrec">
-      <BoundTo>a9459fee-f589-4652-be2b-a38201fd934f</BoundTo>
+    <None Include="DesktopTests\Recording1.rxrec">
       <id>8e347896-01fa-42bb-bfa3-9095dc7e4b11</id>
       <recordtableid>46923a0a-2451-4e03-8978-60ceb0cfd41b</recordtableid>
+      <BoundTo>09fd773e-c782-42dd-8021-4393e58c293d</BoundTo>
     </None>
-    <None Include="Recording2.rxrec">
-      <BoundTo>a9459fee-f589-4652-be2b-a38201fd934f</BoundTo>
+    <None Include="DesktopTests\Recording2.rxrec">
       <id>7bbfefd9-f22c-4ad6-a124-45b17891dfe5</id>
       <recordtableid>b0ed384b-13e5-44c0-bdf3-f42b7a19ab58</recordtableid>
+      <BoundTo>09fd773e-c782-42dd-8021-4393e58c293d</BoundTo>
     </None>
     <Content Include="AC3CalcTests.rxtmg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -124,4 +124,12 @@
     </Content>
   </ItemGroup>
   <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
+  <ItemGroup>
+    <Folder Include="DesktopTests">
+      <id>57623e9e-d4ef-47c4-ab81-0107eca7a0a9</id>
+    </Folder>
+    <Folder Include="BrowserTests">
+      <id>d88431e1-3ea1-455d-8a34-ffa5d08fc408</id>
+    </Folder>
+  </ItemGroup>
 </Project>

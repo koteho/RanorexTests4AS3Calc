@@ -15,8 +15,22 @@ TracingScreenshotQuality="40"
 reportlevel="Info;20">
 	<content>
 		<testcase
-		name="TestCase"
-		id="59bde01d-0441-46fc-9ef7-0ead3942c0e6"/>
+		name="DesktopTests"
+		id="59bde01d-0441-46fc-9ef7-0ead3942c0e6">
+			<testmodule
+			name="Recording1"
+			id="5c5ed123-b7a6-4260-9de6-4219c9a9bc8b"
+			ref="46923a0a-2451-4e03-8978-60ceb0cfd41b"
+			type="Recording"/>
+			<testmodule
+			name="Recording2"
+			id="e4bbbd5a-1942-4531-ba09-1327e00892b5"
+			ref="b0ed384b-13e5-44c0-bdf3-f42b7a19ab58"
+			type="Recording"/>
+		</testcase>
+		<testcase
+		name="BrowserTests"
+		id="3f442cf4-2ebf-42f4-b750-8a71c88c622a"/>
 	</content>
 	<testconfigurations
 	default="TestRun">
@@ -24,6 +38,8 @@ reportlevel="Info;20">
 		name="TestRun">
 			<testcase
 			id="59bde01d-0441-46fc-9ef7-0ead3942c0e6"/>
+			<testcase
+			id="a1307f36-8742-4d5d-9c61-c6cd7cf85409"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references/>
